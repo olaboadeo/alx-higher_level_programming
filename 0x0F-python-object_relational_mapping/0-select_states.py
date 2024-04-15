@@ -10,8 +10,8 @@ def list_states (username, password, database):
 			passwd=password,\
 			db=database)
 	cursor = db.cursor()
-cursor.execute("SELECT * FROM states ORDER BY id ASC")
-rows = cursor.fetchall()
-for row in rows:
-	print(row)
-db.close()
+	cursor.execute("SELECT * FROM states ORDER BY id ASC")
+	rows = cursor.fetchall()
+	for row in rows:
+		print(row)
+	db.close()
